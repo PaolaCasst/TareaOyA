@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Práctica 1: Medidas de Desempeño}
+\author{Tu nombre}
+\date{6 de febrero de 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+
+La práctica 1 de la asignatura de Organización y Arquitectura de Computadoras tiene como objetivo medir el desempeño de sistemas de computo utilizando la batería de pruebas Phoronix Test Suite.
+
+\section{Objetivos}
+
+\subsection{Generales}
+
+El alumno aprenderá a medir el desempeño de sistemas de computo.
+
+\subsection{Particulares}
+
+Al finalizar la práctica, el alumno tendrá la capacidad de:
+
+\begin{itemize}
+\item Ejecutar pruebas de desempeño con la batería de pruebas Phoronix Test Suite.
+\item Realizar estudios comparativos del desempeño de sistemas de computo.
+\item Determinar la medida de tendencia central adecuada a la muestra tomada para sintetizar el desempeño.
+\end{itemize}
+
+\section{Requerimientos}
+
+\subsection{Conocimientos Previos}
+
+De preferencia, el sistema operativo GNU/Linux y el manejo de comandos en una terminal.
+
+\subsection{Tiempo de Realización Sugerido}
+
+5 horas
+
+\subsection{Número de Colaboradores}
+
+Equipos de 4 personas
+
+\subsection{Software a Utilizar}
+
+El paquete Phoronix Test Suite
+
+\section{Planteamiento}
+
+El diseñador de arquitecturas de computo debe tomar varias decisiones que tienen impacto directo tanto en el costo como en el desempeño del sistema, por lo que requiere de mecanismos eficaces para medir y comparar el rendimiento de los sistemas de computo.
+
+\section{Desarrollo}
+
+\subsection{Phoronix Test Suite}
+
+Phoronix Test Suite es una batería de pruebas de código abierto desarrollada por Phoronix.com bajo la licencia GNU-GPL.
+
+\subsection{Instalación}
+
+La plataforma se encuentra disponible en los repositorios de las principales distribuciones de Linux.
+
+\subsection{Uso}
+
+El uso de la batería de pruebas es a través de la línea de comandos.
+
+\section{Procedimiento}
+
+\subsection{Tabla de especificaciones}
+
+En equipo, elaboren una forma para reportar los resultados de las pruebas. La forma deberá solicitar la siguiente información:
+
+\begin{itemize}
+\item Nombre del alumno
+\item Datos de la computadora
+\begin{itemize}
+\item Fabricante y modelo de la computadora
+\item Tipo de Mother Board
+\item Fabricante, modelo, capacidad de la GPU, en caso de tenerla
+\item Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador
+\item Capacidad y tipo de memoria RAM y de caches de los procesadores
+\item Capacidad, tipo y velocidad del disco duro
+\item Distribución del sistema operativo y versión del Kernel
+\end{itemize}
+\item Una tabla con dos columnas para reportar los resultados, la primera columna será el nombre de la prueba y la segunda columna será el resultado indicando la unidad de medida
+\end{itemize}
+
+\subsection{Análisis de datos}
+
+Cada miembro del equipo deberá ejecutar las pruebas en una computadora y reportar los resultados en una forma. Las computadoras deberán diferir en al menos una característica (sistema operativo, procesador, capacidad de memoria RAM, etc.). Si alguna de las pruebas es imposible de ejecutar, el equipo deberá escoger otra prueba que corresponda al mismo tipo (tiempo de respuesta o rendimiento, además de qué está probando: Disco, procesador, gráficos o sistema) y sustituir los resultados.
+
+\section{Ejercicios}
+
+\begin{enumerate}
+\item Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.
+\item Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:
+\begin{itemize}
+\item La medida de tiempo de respuesta
+\item La medida de rendimiento
+\end{itemize}
+\item Agrega los resultados obtenidos a tu reporte y compártelo con tus compañeros de equipo.
+\item Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia,
+\item Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.
+\item Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?
+\end{enumerate}
+
+\section{Preguntas}
+
+\begin{enumerate}
+\item ¿Cuál computadora tiene el mejor tiempo de ejecución? Comparada con la computadora con la peor medida de tiempo de ejecución, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El tiempo de ejecución de la computadora A es x veces que la computadora B”.
+\item ¿Cuál computadora tiene el mejor rendimiento? Comparada con la computadora con el peor rendimiento, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El rendimiento de la computadora A es x veces que la computadora B”.
+\item Considera todas las computadoras usadas como referencia; Para cada computadora, ¿cuál computadora tiene el mejor desempeño y cuál computadora tiene el peor desempeño?
+\item ¿Qué es el Socket AM4 y AM5? ¿Cuáles son sus diferencias y cuál se usa más hoy en día? ¿Cuáles son los sockets LGA 1200 y LGA 1151? ¿Cuáles son sus diferencias y cuál se usa más hoy en día?
+\item ¿Por qué se considera que la GPU: Nvidia GTX 1080Ti es una de las mejores GPUs de todos los tiempos?
+\item De entre los atributos de cada máquina comparada, ¿cuál máquina tiene el mejor disco duro? ¿Cuál tiene la mejor GPU? ¿Cuál tiene la mejor RAM? ¿Cuáles resultan determinantes en la pérdida o ganancia de desempeño en las pruebas realizadas?
+\end{enumerate}
+
+\end{document}
