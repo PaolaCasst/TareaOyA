@@ -1,0 +1,460 @@
+\documentclass[12pt]{article} 
+
+%Symbols
+\usepackage{txfonts}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{enumerate}
+\usepackage[
+  top=3cm,
+  bottom=3cm,
+  left=2.25cm,
+  right=2.25cm,
+  heightrounded]{geometry}
+
+%Header-Footer
+\usepackage{fancyhdr}
+\cfoot{\thepage}
+\lhead{Práctica 1: Medidas de rendimiento}
+\rhead{\textsc{Organización y Arquitectura de Computadoras 2025-2}}
+%\pagenumbering{gobble}
+
+\pagestyle{fancyplain}
+
+%tables
+\setlength\tabcolsep{15pt}
+
+%Margins
+\usepackage{geometry}
+\addtolength{\hoffset}{-0.2cm}
+\addtolength{\textwidth}{0.4cm}
+\addtolength{\voffset}{-0.5cm}
+\addtolength{\textheight}{1cm}
+
+%Comando para itemize y enumate.
+\newcommand{\pl}[1]{\item \textbf{ #1 }}
+\newcommand{\separador}{\begin{center}
+    \Huge ***
+    \textheight
+\end{center}
+}
+
+\begin{document}
+%\begin{titlepage}
+
+%\include{Tareas/Plantilla}
+%\end{titlepage}
+
+\section{Especificaciones de las computadoras:}
+\subsection{Integrante 1}
+\begin{itemize}
+    \pl{Nombre del intregrante:}
+
+    \pl{Fabricante y modelo de la computadora:}
+
+    \pl{Tipo de Mother Board:}
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:}
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:}
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:}
+
+    \pl{Capacidad, tipo y velocidad del disco duro:}
+
+    \pl{Distribución del sistema operativo y versión del Kernel:}
+\end{itemize}
+
+
+\subsection{Integrante 2}
+\begin{itemize}
+    \pl{Nombre del intregrante:}
+
+    \pl{Fabricante y modelo de la computadora:}
+
+    \pl{Tipo de Mother Board:}
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:}
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:}
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:}
+
+    \pl{Capacidad, tipo y velocidad del disco duro:}
+
+    \pl{Distribución del sistema operativo y versión del Kernel:}
+\end{itemize}
+
+\subsection{Integrante 3}
+\begin{itemize}
+    \pl{Nombre del intregrante:}
+
+    \pl{Fabricante y modelo de la computadora:}
+
+    \pl{Tipo de Mother Board:}
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:}
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:}
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:}
+
+    \pl{Capacidad, tipo y velocidad del disco duro:}
+
+    \pl{Distribución del sistema operativo y versión del Kernel:}
+\end{itemize}
+
+\subsection{Integrante 4}
+\begin{itemize}
+    \pl{Nombre del intregrante:}
+
+    \pl{Fabricante y modelo de la computadora:}
+
+    \pl{Tipo de Mother Board:}
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:}
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:}
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:}
+
+    \pl{Capacidad, tipo y velocidad del disco duro:}
+
+    \pl{Distribución del sistema operativo y versión del Kernel:}
+\end{itemize}
+
+\newpage
+\section{Tablas de resultados}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression &  \\
+        \hline
+        Fhourstones &  \\
+        \hline
+        Xonotic (800x600 - Low) &  \\
+        \hline
+        Git &  \\
+        \hline
+        REDIS &  \\
+        \hline
+        BlogBench &  \\
+        \hline
+        Unpacking The Linux Kernel &  \\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 1}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression &  \\
+        \hline
+        Fhourstones &  \\
+        \hline
+        Xonotic (800x600 - Low) &  \\
+        \hline
+        Git &  \\
+        \hline
+        REDIS &  \\
+        \hline
+        BlogBench &  \\
+        \hline
+        Unpacking The Linux Kernel &  \\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 2}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression &  \\
+        \hline
+        Fhourstones &  \\
+        \hline
+        Xonotic (800x600 - Low) &  \\
+        \hline
+        Git &  \\
+        \hline
+        REDIS &  \\
+        \hline
+        BlogBench &  \\
+        \hline
+        Unpacking The Linux Kernel &  \\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 3}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression &  \\
+        \hline
+        Fhourstones &  \\
+        \hline
+        Xonotic (800x600 - Low) &  \\
+        \hline
+        Git &  \\
+        \hline
+        REDIS &  \\
+        \hline
+        BlogBench &  \\
+        \hline
+        Unpacking The Linux Kernel &  \\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 4}
+\end{table}
+
+\newpage
+\section{Ejercicios}
+\subsection{Integrante 1}
+
+\begin{enumerate}[(3.1.1)]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        T1 & R1 \\
+        \hline
+        T2 & R2 \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \pl{Medida de tiempo de respuesta:}(Indicar cuál medida se escogió y el resultado)\par
+    
+        \pl{Medida de rendimiento:} (Indicar cuál medida se escogió y el resultado)\par
+    \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 1 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+
+\end{enumerate}
+
+\subsection{Integrante 2}
+
+\begin{enumerate}[(3.2.1)]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        T1 & R1 \\
+        \hline
+        T2 & R2 \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \pl{Medida de tiempo de respuesta:}(Indicar cuál medida se escogió y el resultado)\par
+    
+        \pl{Medida de rendimiento:} (Indicar cuál medida se escogió y el resultado)\par
+    \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 2 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+
+\end{enumerate}
+
+\subsection{Integrante 3}
+
+\begin{enumerate}[(3.3.1)]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        T1 & R1 \\
+        \hline
+        T2 & R2 \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \pl{Medida de tiempo de respuesta:}(Indicar cuál medida se escogió y el resultado)\par
+    
+        \pl{Medida de rendimiento:} (Indicar cuál medida se escogió y el resultado)\par
+    \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 3 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+
+\end{enumerate}
+
+\subsection{Integrante 4}
+
+\begin{enumerate}[(3.4.1)]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        T1 & R1 \\
+        \hline
+        T2 & R2 \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \pl{Medida de tiempo de respuesta:}(Indicar cuál medida se escogió y el resultado)\par
+    
+        \pl{Medida de rendimiento:} (Indicar cuál medida se escogió y el resultado)\par
+    \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 4 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+
+\end{enumerate}
+
+\newpage
+\section{Preguntas}
+\begin{enumerate}[(4.1)]
+    \item ¿Cuál computadora tiene el mejor tiempo de ejecución? Comparada con la computadora con la peor medida de tiempo de ejecución, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El tiempo de ejecución de la computadora A es x veces que la computadora B”.
+    
+    \item ¿Cuál computadora tiene el mejor rendimiento? Comparada con la computadora con el peor rendimiento, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El rendimiento de la computadora A es x veces que la computadora B”.
+
+    \item Considera todas las computadoras usadas como referencia; Para cada computadora, ¿cuál computadora tiene el mejor desempeño y cuál computadora tiene el peor desempeño?
+
+    \item ¿Qué es el Socket AM4 y AM5? ¿Cuáles son sus diferencias y cuál se usa más hoy en día? ¿Cuáles son los sockets LGA 1200 y LGA 1151? ¿Cuáles son sus diferencias y cuál se usa más hoy en día?
+
+    \item ¿Por qué se considera que la GPU: Nvidia GTX 1080Ti es una de las mejores GPUs de todos los tiempos?
+
+    \item De entre los atributos de cada máquina comparada, ¿cuál máquina tiene el mejor disco duro? ¿Cuál tiene la mejor GPU? ¿Cuál tiene la mejor RAM? ¿Cuáles resultan determinantes en la pérdida o ganancia de desempeño en las pruebas realizadas?
+\end{enumerate}
+
+\end{document}
