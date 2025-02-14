@@ -1,11 +1,11 @@
 \documentclass[12pt]{article} 
 
 %Symbols
-\usepackage{txfonts}
+%\usepackage{txfonts}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{enumitem}
-\usepackage{enumerate}
+%\\usepackage{enumerate}
 \usepackage[
   top=3cm,
   bottom=3cm,
@@ -89,21 +89,34 @@
 \subsection{Integrante 3}
 \begin{itemize}
     \pl{Nombre del intregrante: Tomás Barrera Hernández}
-
-    \pl{Fabricante y modelo de la computadora:}
-
-    \pl{Tipo de Mother Board:}
-
-    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:}
-
-    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:}
-
-    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:}
-
-    \pl{Capacidad, tipo y velocidad del disco duro:}
-
-    \pl{Distribución del sistema operativo y versión del Kernel:}
-\end{itemize}
+    
+    \pl{Fabricante y modelo de la computadora: Hp,HP All-in-One 24-f0xx }
+    
+    \pl{Tipo de Mother Board:Motherboard Número de serie PGUUH0A8JDI1YC, versión 1000, modelo 8430, Fabricante Hp.}
+    
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla: Advanced Micro Devices, Inc [AMD/ATI], modelo Stoney[Radeon R2/R3/R4/R5 graphics], gráficos integrados.}
+    
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:AMD A9-9425 AMD/ATI, modelo AMD A9-9425 RADEON R5 5 COMPUTE CORES, frecuencia de Mínima/Base: 1400 MHz (1.4 GHz) Máxima/Turbo: 3100 MHz (3.1 GHz) Velocidad Promedio (según la salida): 1409 MHz, número de núcleos 2 (Dual core), arquitectura de 64 bits.}
+    
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:Capacidad de 8g, con dos ranuras 1 DIMM 0(CHANNEL A) Y 2 DIMM1(CHANNEL A) de 8 gb tipo DDR4, caché de los procesadores:
+    	Caché L1 de datos (L1d):
+    	Tamaño: 64 KiB por instancia
+    	Número de instancias: 2
+    	Total (si se sumaran todas): 2 × 64 KiB = 128 KiB
+    	Caché L1 de instrucciones (L1i):
+    	Tamaño: 128 KiB por instancia
+    	Número de instancias: 2
+    	Total (si se sumaran todas): 2 × 128 KiB = 256 KiB
+    	Caché L2:
+    	Tamaño: 2 MiB por instancia
+    	Número de instancias: 2
+    	Total (si se sumaran todas): 2 × 2 MiB = 4 MiB
+    }
+    
+    \pl{Capacidad, tipo y velocidad del disco duro:Capacidad de disco de 1 Tb, disco duro mecánico (HDD) conectado vía SATA (rotacional), velocidad de escritura secuencial de 678 MB/s}
+    
+    \pl{Distribución del sistema operativo y versión del Kernel:Sistema operativo de Fedora Linux 40 (Workstation Edition), Versión 6.12.11, fedora 40 fc40, arquitectura x86-64 }
+    \end{itemize}
 
 \subsection{Integrante 4}
 \begin{itemize}
@@ -177,23 +190,41 @@
 
 \begin{table}[!htb]
     \centering
-    \begin{tabular}{|c|c|}
+    \begin{tabular}{|p{5cm}|p{9cm}|}
         \hline
         \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
         \hline
-        7Zip Compression &  \\
+        7Zip Compression & Comprensión promedio de 5323 MIPS, \newline
+        con una desviación estándar de 1.35\% \newline
+        y una descompresión de 5943 MIPS \newline
+        con una desviación estándar de 0.41\% con una u¿duración de 18 minutos\\
         \hline
-        Fhourstones &  \\
+        Fhourstones & Promedio de 8239.3 Kpos/ses, \newline
+        con una desviación de 1.92\%, \newline
+        con un rendimiento bajo al promedio \newline
+        y una duración de 10 minutos \\
         \hline
-        Xonotic (800x600 - Low) &  \\
+        Xonotic (800x600 - Low) & Promedio de 133.7280457 fps, \newline
+        con un mínimo de 77 y un máximo de 224, \newline
+        con una desviación de 0.34\% \newline
+        y una duración de 18 minutos \\
         \hline
-        Git &  \\
+        Git & Promedio de 122.675 segundos, \newline
+        con una desviación de 10.67\%, \newline
+        con un resultado doble al estándar \newline
+        y una duración de 8 minutos \\
         \hline
         REDIS &  \\
         \hline
-        BlogBench &  \\
+        BlogBench & Promedio de lectura de 429359.8, \newline
+        con una desviación de 3.80\%, \newline
+        un promedio de escritura de 468, \newline
+        con una desviación del 0.12\% \newline
+        y una duración total de 26 minutos \\
         \hline
-        Unpacking The Linux Kernel &  \\
+        Unpacking The Linux Kernel & Promedio de 128.662 segundos, \newline
+        con una desviación de 44.33\% \newline
+        y una duración de 7 minutos \\
         \hline
     \end{tabular}
     \caption{Resultado PC 3}
@@ -227,7 +258,7 @@
 \section{Ejercicios}
 \subsection{Integrante 1}
 
-\begin{enumerate}[(3.1.1)]
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
     \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
     \begin{table}[htb]
         \centering
@@ -281,7 +312,7 @@
 
 \subsection{Integrante 2}
 
-\begin{enumerate}[(3.2.1)]
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
     \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
     \begin{table}[htb]
         \centering
@@ -335,7 +366,7 @@
 
 \subsection{Integrante 3}
 
-\begin{enumerate}[(3.3.1)]
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
     \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
     \begin{table}[htb]
         \centering
@@ -343,19 +374,59 @@
         \hline
         Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
         \hline
-        T1 & R1 \\
+        7Zip Compression y Decompression & Fhourstones \\
         \hline
-        T2 & R2 \\
+        Unpacking the Linux Kernel & Xonotic \\
+        \hline
+         & Git \\
+        \hline
+        & BlogBench \\
         \hline
         \end{tabular}
     \end{table}\par
 
     \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
     \begin{itemize}
-        \pl{Medida de tiempo de respuesta:}(Indicar cuál medida se escogió y el resultado)\par
-    
-        \pl{Medida de rendimiento:} (Indicar cuál medida se escogió y el resultado)\par
-    \end{itemize}
+       \item \textbf{Medida de tiempo de respuesta:} \\
+       Para la prueba 7-Zip Compression usamos la media aritmética:
+       \[
+       \text{Comprensión: } \frac{5360+5368+5240+5350}{4}=5323,\quad
+       \]
+       \[
+       \text{Descompresión: } \frac{5952+5962+5916+5958}{4}=5943.
+       \]
+       Para la prueba Unpacking The Linux Kernel, usamos la media aritmética:
+       \[
+       \frac{
+       	\begin{split}
+       		83.213 + 23.127 + 164.781 + 114.976 + 105.271 + 44.262 \\
+       		+\, 199.853 + 120.652 + 71.761 + 218.521 + 196.464 + 152.41 \\
+       		+\, 128.269 + 114.311 + 124.175 + 196.541
+       	\end{split}
+       }{16} = 128.662.
+       \]
+       
+       \item \textbf{Medida de rendimiento:} \\
+       Para Fhourstones: Usamos la media armónica:
+       \[
+       \frac{3}{\frac{3}{8239.3}} = 8239.3\ \text{Kpos/sec}.
+       \]
+       Para Xonotic: Usamos la media aritmética:
+       \[
+       \frac{133.2123565+134.0232115+133.9485692}{3}=133.7280457\ \text{fps}.
+       \]
+       Para Git: Usamos la media aritmética ponderada y obtenemos:
+       \[
+       120.144\ \text{s}.
+       \]
+       Para Blogbench: Usamos la media aritmética:
+       \[
+       \text{Lectura: } \frac{402312+441013+423612+431612+448250}{5}=429359.8,\quad
+       \]
+       \[
+       \text{Escritura: } \frac{468+468+469}{3}=468.33.
+       \]
+       \end{itemize}
 
     \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
 
@@ -383,13 +454,29 @@
         \caption{Usando la PC 3 como referencia (tiempo normalizado).}
     \end{table}
 
-    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+    \begin{itemize}
+    	\item \textbf{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis:} ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da? Para la prueba 7Zip:
+    	
+    	\item \textbf{7Zip:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto de que al realizar el cambio se pueden mejorar los tiempos de arranque hasta en 30 segundos y reducir los tiempos de carga hasta en un 60\%.
+    	
+    	\item \textbf{Fhourstones:} Actualizar el CPU por un AMD Ryzen 5 5600G, con un costo aproximado de \$2,100 MXN, teniendo un impacto en el rendimiento, pues mejora el procesamiento de cálculos intensivos, con una mayor cantidad de núcleos e hilos reduciendo el tiempo de ejecución, mejorando un 40\% en cálculos de búsqueda como algoritmos alfa-beta.
+    	
+    	\item \textbf{Xonotic:} El componente a cambiar en este caso sería el GPU, pues tiene mayor impacto en los frames y benchmarks gráficos, si la cambiamos por una tarjeta gráfica de nivel medio como AMD Radeon RX 6600 con un costo de \$7,000-\$8,000 MXN, el rendimiento podría mejorar desde un 50\% hasta un 100\% de mejora en escenarios de juegos o bien pruebas gráficas.
+    	
+    	\item \textbf{Git:} De igual manera que con el test de 7Zip, lo mejor sería cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto al reducir el tiempo de acceso a archivos y en operaciones de lectura/escritura, así mismo como mejora del rendimiento en tareas de clonación y cambios en repositorios grandes, con una posible mejora del 30-50\% en la velocidad de ejecución.
+    	
+    	\item \textbf{Redis:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto en la mejora de los tiempos de acceso a la base de datos y la mejora en la velocidad de ejecución de las operaciones de Redis.
+    	
+    	\item \textbf{Blogbench:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD) es la mejor opción, con el costo aproximado de \$700 MXN, teniendo un impacto en la reducción de tiempos para acceder y mejorar la velocidad de lectura/escritura, mejorando en la lectura en un 50\% y en la escritura en un 80\%-90\%.
+    	
+    	\item \textbf{Unpacking:} Por última vez, cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD) es la mejor opción, con el costo aproximado de \$700 MXN, teniendo un impacto en la reducción de tiempos para la extracción de información, así como lectura y escritura de datos.
+    \end{itemize}
 
 \end{enumerate}
 
 \subsection{Integrante 4}
 
-\begin{enumerate}[(3.4.1)]
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
     \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
     \begin{table}[htb]
         \centering
@@ -443,7 +530,7 @@
 
 \newpage
 \section{Preguntas}
-\begin{enumerate}[(4.1)]
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
     \item ¿Cuál computadora tiene el mejor tiempo de ejecución? Comparada con la computadora con la peor medida de tiempo de ejecución, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El tiempo de ejecución de la computadora A es x veces que la computadora B”.
     
     \item ¿Cuál computadora tiene el mejor rendimiento? Comparada con la computadora con el peor rendimiento, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El rendimiento de la computadora A es x veces que la computadora B”.
