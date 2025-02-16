@@ -226,6 +226,14 @@
         con una desviación de 44.33\% \newline
         y una duración de 7 minutos \\
         \hline
+        Vkpeak & Promedio de 75.86 GFLOPS, 75.9 GFLOPS, 4.78 GFLOPS, 4.76 GFLOPS, 15.39 GIOPS,15.27 GIOPS\newline
+        con una desviación de 0.01\%,0.01\%, 0.00\%, 0.00\%, 0.04\%,0.04\%, \newline
+        y una duración de 3 minutos \\
+        \hline
+        Phpbench & Promedio de 1 426932 Score, \newline
+        con una desviación de 0.57\% \newline
+        y una duración de 3 minutos \\
+        \hline
     \end{tabular}
     \caption{Resultado PC 3}
 \end{table}
@@ -382,6 +390,10 @@
         \hline
         & BlogBench \\
         \hline
+        & Vkpeak \\
+        \hline
+        & Phpbench \\
+        \hline
         \end{tabular}
     \end{table}\par
 
@@ -426,6 +438,25 @@
        \[
        \text{Escritura: } \frac{468+468+469}{3}=468.33.
        \]
+       	Para Vkpeak: Usamos la media aritmética:
+       	\[
+       	\text{fp32-scalar: } \frac{75.86+75.87+75.86}{3}=75.86 \quad
+       	\]
+       	\[
+       	\text{fp32-vec4: } \frac{5.89+75.90+75.90}{3}=75.90 
+       	\]
+       	\[
+       	\text{fp64-scalar: } \frac{4.78+4.78+4.78}{3}=4.78 \quad
+       	\]
+       	\[
+       	\text{fp64-vec4: } \frac{4.76+4.76+4.76}{3}=4.76 \quad
+       	\]
+       	\[
+       	\text{int32-scalar: } \frac{15.39+15.40+15.39}{3}=15.39 \quad
+       	\]
+       	\[
+       	\text{int32-vec4: } \frac{15.27+15.27+15.28}{3}=15.27 \quad
+       	\]
        \end{itemize}
 
     \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
@@ -465,11 +496,14 @@
     	
     	\item \textbf{Git:} De igual manera que con el test de 7Zip, lo mejor sería cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto al reducir el tiempo de acceso a archivos y en operaciones de lectura/escritura, así mismo como mejora del rendimiento en tareas de clonación y cambios en repositorios grandes, con una posible mejora del 30-50\% en la velocidad de ejecución.
     	
-    	\item \textbf{Redis:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto en la mejora de los tiempos de acceso a la base de datos y la mejora en la velocidad de ejecución de las operaciones de Redis.
-    	
     	\item \textbf{Blogbench:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD) es la mejor opción, con el costo aproximado de \$700 MXN, teniendo un impacto en la reducción de tiempos para acceder y mejorar la velocidad de lectura/escritura, mejorando en la lectura en un 50\% y en la escritura en un 80\%-90\%.
     	
     	\item \textbf{Unpacking:} Por última vez, cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD) es la mejor opción, con el costo aproximado de \$700 MXN, teniendo un impacto en la reducción de tiempos para la extracción de información, así como lectura y escritura de datos.
+    	
+    	\item \textbf{Vkpeak:} Cambiar el GPU pues tiene mayor impacto a la hora de ejecutar operaciones en FP32 y FP64 e int32, cambiandolo por una tarjeta gráfica de nivel medio como RTX 3060, con un costo aproximado de \$9,000 MXN,aumentando los valores de rendimiento, operaciones vectoriales y cálculos paralelos, con un mejor rendimiento
+    	
+    	\item \textbf{Phpbench:} De nuevo, sería un cambio de CPU, con un cambio a un procesador de gama media, como el AMD Ryzen 5 5600G, con un costo de  \$2,100 MXN, para que las tareas ejecutadas en el benchmark mejores en cálculos y procesamiento, así como un mayor rendimiento con mayor velocidad de reloj y con más núcleos/hijos acelerando la ejecución de scripts y tareas.
+    	
     \end{itemize}
 
 \end{enumerate}
