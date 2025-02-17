@@ -1,122 +1,677 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
+\documentclass[12pt]{article} 
+
+%Symbols
+%\usepackage{txfonts}
+\usepackage[spanish]{babel}
 \usepackage{amsmath}
+\usepackage{enumitem}
+%\\usepackage{enumerate}
+\usepackage[
+  top=3cm,
+  bottom=3cm,
+  left=2.25cm,
+  right=2.25cm,
+  heightrounded]{geometry}
 
-\title{Práctica 1: Medidas de Desempeño}
-\author{Tu nombre}
-\date{6 de febrero de 2025}
+%Header-Footer
+\usepackage{fancyhdr}
+\cfoot{\thepage}
+\lhead{Práctica 1: Medidas de rendimiento}
+\rhead{\textsc{Organización y Arquitectura de Computadoras 2025-2}}
+%\pagenumbering{gobble}
 
+\pagestyle{fancyplain}
 
+%tables
+\setlength\tabcolsep{15pt}
+
+%Margins
+\usepackage{geometry}
+\addtolength{\hoffset}{-0.2cm}
+\addtolength{\textwidth}{0.4cm}
+\addtolength{\voffset}{-0.5cm}
+\addtolength{\textheight}{1cm}
+
+%Comando para itemize y enumate.
+\newcommand{\pl}[1]{\item \textbf{ #1 }}
+\newcommand{\separador}{\begin{center}
+    \Huge ***
+    \textheight
+\end{center}
+}
 
 \begin{document}
+%\begin{titlepage}
 
-\maketitle
+%\include{Tareas/Plantilla}
+%\end{titlepage}
 
-\section{Introducción}
-
-La práctica 1 de la asignatura de Organización y Arquitectura de Computadoras tiene como objetivo medir el desempeño de sistemas de computo utilizando la batería de pruebas Phoronix Test Suite.
-
-\section{Objetivos}
-
-\subsection{Generales}
-
-El alumno aprenderá a medir el desempeño de sistemas de computo.
-
-\subsection{Particulares}
-
-Al finalizar la práctica, el alumno tendrá la capacidad de:
-
+\section{Especificaciones de las computadoras:}
+\subsection{Integrante 1}
 \begin{itemize}
-\item Ejecutar pruebas de desempeño con la batería de pruebas Phoronix Test Suite.
-\item Realizar estudios comparativos del desempeño de sistemas de computo.
-\item Determinar la medida de tendencia central adecuada a la muestra tomada para sintetizar el desempeño.
+    \pl{Nombre del intregrante:} Jorge Eduardo García Serrano.
+
+    \pl{Fabricante y modelo de la computadora:} Sony Vaio modelo VPCF120FL.
+
+    \pl{Tipo de Mother Board:} Sony VAIO (R1100Y6 BIOS).
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:} Fabricante Nvidia. Modelo NVIDIA GeForce GT 330M. 1GB de RAM (979MB usables), velocidad de núcleo 575MHz, velocidad de shader 1265 MHz, velocidad de memoria 1066MHz, tecnología 40nm.
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:} Fabricante Intel. Modelo Intel Core i7-740QM. Con 4 núcleos y con 8 subprocesos totales. Arquitectura de 64 bits (x64).
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:} Procesador con Caché L1 de 256 KB, L2 de 1 MB y L3 de 6 MB. Memorias RAM 2 slots, con la memoria del slot 1 de 4 GB 2RX8 PC3-12800S-11 DDR3 1600 CL11 marca ADATA, y con la memoria del slot 2 de 4 GB 2RX8 PC3-10600-9-10-F2 DDR3 marca HNNIX Korea 01.
+
+    \pl{Capacidad, tipo y velocidad del disco duro:} Capacidad de 1 TB de almacenamiento, de tipo HDD magnético 2.5 pulgadas con sistema de archivos NTFS, velocidad promedio de lectura con escrituras secuenciales  10.405 ms, latencia máxima 90.900 ms, velocidad promedio de lectura con escrituras aleatorias 22.341 ms, lectura secuencial 64.0 73.82 MB/s, escritura secuencial 64.0 88.46 MB/s.
+
+    \pl{Distribución del sistema operativo y versión del Kernel:} Windows 10 Pro 22H2 Build 19045. Versión de kernel 10.0.19045.5371 (x86\_64).
 \end{itemize}
 
-\section{Requerimientos}
 
-\subsection{Conocimientos Previos}
-
-De preferencia, el sistema operativo GNU/Linux y el manejo de comandos en una terminal.
-
-\subsection{Tiempo de Realización Sugerido}
-
-5 horas
-
-\subsection{Número de Colaboradores}
-
-Equipos de 4 personas
-
-\subsection{Software a Utilizar}
-
-El paquete Phoronix Test Suite
-
-\section{Planteamiento}
-
-El diseñador de arquitecturas de computo debe tomar varias decisiones que tienen impacto directo tanto en el costo como en el desempeño del sistema, por lo que requiere de mecanismos eficaces para medir y comparar el rendimiento de los sistemas de computo.
-
-\section{Desarrollo}
-
-\subsection{Phoronix Test Suite}
-
-Phoronix Test Suite es una batería de pruebas de código abierto desarrollada por Phoronix.com bajo la licencia GNU-GPL.
-
-\subsection{Instalación}
-
-La plataforma se encuentra disponible en los repositorios de las principales distribuciones de Linux.
-
-\subsection{Uso}
-
-El uso de la batería de pruebas es a través de la línea de comandos.
-
-\section{Procedimiento}
-
-\subsection{Tabla de especificaciones}
-
-En equipo, elaboren una forma para reportar los resultados de las pruebas. La forma deberá solicitar la siguiente información:
-
+\subsection{Integrante 2}
 \begin{itemize}
-\item Nombre del alumno
-\item Datos de la computadora
-\begin{itemize}
-\item Fabricante y modelo de la computadora
-\item Tipo de Mother Board
-\item Fabricante, modelo, capacidad de la GPU, en caso de tenerla
-\item Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador
-\item Capacidad y tipo de memoria RAM y de caches de los procesadores
-\item Capacidad, tipo y velocidad del disco duro
-\item Distribución del sistema operativo y versión del Kernel
-\end{itemize}
-\item Una tabla con dos columnas para reportar los resultados, la primera columna será el nombre de la prueba y la segunda columna será el resultado indicando la unidad de medida
+    \pl{Nombre del intregrante:}
+
+    \pl{Fabricante y modelo de la computadora:}
+
+    \pl{Tipo de Mother Board:}
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla:}
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:}
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:}
+
+    \pl{Capacidad, tipo y velocidad del disco duro:}
+
+    \pl{Distribución del sistema operativo y versión del Kernel:}
 \end{itemize}
 
-\subsection{Análisis de datos}
+\subsection{Integrante 3}
+\begin{itemize}
+    \pl{Nombre del intregrante: Tomás Barrera Hernández}
+    
+    \pl{Fabricante y modelo de la computadora: Hp,HP All-in-One 24-f0xx }
+    
+    \pl{Tipo de Mother Board:Motherboard Número de serie PGUUH0A8JDI1YC, versión 1000, modelo 8430, Fabricante Hp.}
+    
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla: Advanced Micro Devices, Inc [AMD/ATI], modelo Stoney[Radeon R2/R3/R4/R5 graphics], gráficos integrados.}
+    
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:AMD A9-9425 AMD/ATI, modelo AMD A9-9425 RADEON R5 5 COMPUTE CORES, frecuencia de Mínima/Base: 1400 MHz (1.4 GHz) Máxima/Turbo: 3100 MHz (3.1 GHz) Velocidad Promedio (según la salida): 1409 MHz, número de núcleos 2 (Dual core), arquitectura de 64 bits.}
+    
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:Capacidad de 8g, con dos ranuras 1 DIMM 0(CHANNEL A) Y 2 DIMM1(CHANNEL A) de 8 gb tipo DDR4, caché de los procesadores:
+    	Caché L1 de datos (L1d):
+    	Tamaño: 64 KiB por instancia
+    	Número de instancias: 2
+    	Total (si se sumaran todas): 2 × 64 KiB = 128 KiB
+    	Caché L1 de instrucciones (L1i):
+    	Tamaño: 128 KiB por instancia
+    	Número de instancias: 2
+    	Total (si se sumaran todas): 2 × 128 KiB = 256 KiB
+    	Caché L2:
+    	Tamaño: 2 MiB por instancia
+    	Número de instancias: 2
+    	Total (si se sumaran todas): 2 × 2 MiB = 4 MiB
+    }
+    
+    \pl{Capacidad, tipo y velocidad del disco duro:Capacidad de disco de 1 Tb, disco duro mecánico (HDD) conectado vía SATA (rotacional), velocidad de escritura secuencial de 678 MB/s}
+    
+    \pl{Distribución del sistema operativo y versión del Kernel:Sistema operativo de Fedora Linux 40 (Workstation Edition), Versión 6.12.11, fedora 40 fc40, arquitectura x86-64 }
+    \end{itemize}
 
-Cada miembro del equipo deberá ejecutar las pruebas en una computadora y reportar los resultados en una forma. Las computadoras deberán diferir en al menos una característica (sistema operativo, procesador, capacidad de memoria RAM, etc.). Si alguna de las pruebas es imposible de ejecutar, el equipo deberá escoger otra prueba que corresponda al mismo tipo (tiempo de respuesta o rendimiento, además de qué está probando: Disco, procesador, gráficos o sistema) y sustituir los resultados.
+\subsection{Integrante 4}
+\begin{itemize}
+    \pl{Nombre del intregrante: Martínez Jiménez José Guillermo}
 
+    \pl{Fabricante y modelo de la computadora: ASUS, ASUS FX506LH}
+
+    \pl{Tipo de Mother Board: ASUS FX506LH}
+
+    \pl{Fabricante, modelo, capacidad de la GPU, en caso de tenerla: NVIDIA GeForce GTX 1650 + Intel UHD 4GB}
+
+    \pl{Fabricante, modelo, frecuencia, número de núcleos y arquitectura del procesador:Intel Core i5-10300H @ 2.50GHz 4 nucleos x86-64}
+
+    \pl{Capacidad y tipo de memoria RAM y de caches de los procesadores:1 x 8192MB 2933MHz Samsung M471A1K43DB1-CWE; cache L1 intruccione: 4 x 32kb, total 128 kb; cache L1 datos: 4 x 32kbs, total 128kb; cache L2: 4 x 256 kb, total 8mb}
+
+    \pl{Capacidad, tipo y velocidad del disco duro:477GB Micron-2210-MTFDHBA512QFD + 1863GB WD Green SN350 2TB}
+
+    \pl{Distribución del sistema operativo y versión del Kernel:Microsoft Windows 11 Home Single Language Build 26100 10.0.26100.3037 (x86-64)}
+\end{itemize}
+
+\newpage
+\section{Tablas de resultados}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|p{5cm}|p{9cm}|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression &  Compresión promedio 11541 MIPS \newline
+        Desviación de 1.10\% \newline
+        Descompesión promedio 11227 MIPS \newline
+        Desviación de 1.85\%
+        En 4 minutos\\
+        \hline
+        Fhourstones &  Promedio de 7445.0 Kpos/sec \newline
+        Desviación de 0.12\% \newline
+        En 12 minutos\\
+        \hline
+        Xonotic (800x600 - Low) &  FPS promedio de 169.2188747 \newline
+        FPS Min - 100, FPS Máx - 279 \newline
+        Desviación de 0.48\% \newline
+        En 13 minutos\\
+        \hline
+        Git &  Tiempo promedio de 126.663 seg. \newline
+        Desviación de 1.13\% \newline
+        En 15 minutos\\
+        \hline
+        BlogBench & Lectura promedio 3783 \newline
+        Desviación de 9.33\% \newline
+        Escritura promedio 70 \newline
+        Desviación de 19.80\% \newline
+        En 51 minutos\\
+        \hline
+        PHPBench & Puntuación promedio de 156712 \newline
+        Desviación de 6.56\% \newline
+        En 26 minutos\\
+        \hline
+        Unpacking The Linux Kernel &  Promedio de 63.977 seg. \newline
+        Desviación de 19.77\% \newline
+        En 23 minutos\\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 1}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|p{5cm}|p{9cm}|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression &  \\
+        \hline
+        Fhourstones &  \\
+        \hline
+        Xonotic (800x600 - Low) &  \\
+        \hline
+        Git &  \\
+        \hline
+        REDIS &  \\
+        \hline
+        BlogBench &  \\
+        \hline
+        Unpacking The Linux Kernel &  \\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 2}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|p{5cm}|p{9cm}|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression & Comprensión promedio de 5323 MIPS, \newline
+        con una desviación estándar de 1.35\% \newline
+        y una descompresión de 5943 MIPS \newline
+        con una desviación estándar de 0.41\% con una u¿duración de 18 minutos\\
+        \hline
+        Fhourstones & Promedio de 8239.3 Kpos/ses, \newline
+        con una desviación de 1.92\%, \newline
+        con un rendimiento bajo al promedio \newline
+        y una duración de 10 minutos \\
+        \hline
+        Xonotic (800x600 - Low) & Promedio de 133.7280457 fps, \newline
+        con un mínimo de 77 y un máximo de 224, \newline
+        con una desviación de 0.34\% \newline
+        y una duración de 18 minutos \\
+        \hline
+        Git & Promedio de 122.675 segundos, \newline
+        con una desviación de 10.67\%, \newline
+        con un resultado doble al estándar \newline
+        y una duración de 8 minutos \\
+        \hline
+        REDIS &  \\
+        \hline
+        BlogBench & Promedio de lectura de 429359.8, \newline
+        con una desviación de 3.80\%, \newline
+        un promedio de escritura de 468, \newline
+        con una desviación del 0.12\% \newline
+        y una duración total de 26 minutos \\
+        \hline
+        Unpacking The Linux Kernel & Promedio de 128.662 segundos, \newline
+        con una desviación de 44.33\% \newline
+        y una duración de 7 minutos \\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 3}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{|p{5cm}|p{9cm}|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{Resultado de la prueba}\\
+        \hline
+        7Zip Compression & Compresión: 23843 MIPS \newline 
+        Descompresión: 21607 MIPS \\
+        \hline
+        Fhourstones & 11722 \\
+        \hline
+        Xonotic (800x600 - Low) &  375.43 fps\\
+        \hline
+        Git & 63.37 s\\
+        \hline
+        BlogBench & Lectura: 8582 \newline
+        Escritura: 222 \\
+        \hline
+        PHPBench &  413051\\
+        \hline
+        Unpacking the linux kernel & 4.637 s\\
+        \hline
+    \end{tabular}
+    \caption{Resultado PC 4}
+\end{table}
+
+\newpage
 \section{Ejercicios}
+\subsection{Integrante 1}
 
-\begin{enumerate}
-\item Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.
-\item Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:
-\begin{itemize}
-\item La medida de tiempo de respuesta
-\item La medida de rendimiento
-\end{itemize}
-\item Agrega los resultados obtenidos a tu reporte y compártelo con tus compañeros de equipo.
-\item Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia,
-\item Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.
-\item Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        7Zip  & BlogBench\\
+        \hline
+        Unpacking the Linux Kernel & Fhourstones \\
+        \hline
+        Git & Xonotic \\
+        \hline
+        & PhpBench \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \pl{Medida de tiempo de respuesta:}\par
+        Para 7Zip se usa la media aritmética:\par
+        \begin{equation*}
+            \frac{11397+11585+11640}{3}=11541
+        \end{equation*}
+
+        \vspace{0.5cm}
+        Para Unpacking the Linux Kernel se usa la media aritmética:
+        \[
+        \frac{\begin{split}
+            32.951 + 53.041 + 46.199 + 53.602 + 54.961 + 52.08 \\
+            + \, 59.165 + 68.119 + 70.067 + 68.454 + 64.214 + 67.347 \\
+            + \, 66.22 + 62.934 + 66.857 + 72.214 + 80.85 + 74.022 + 82.424 + 83.811
+        \end{split}}{20} = 63.977
+        \]
+        \pl{Medida de rendimiento:} \par
+        Para Fhourstones usamos la media armónica:
+        \begin{equation*}
+            \frac{3}{\frac{3}{7445.0}} = 7445.0
+        \end{equation*}
+
+        \vspace{0.5cm}
+        Para BlogBench usamos la media aritmética:
+        
+        \textbf{Lectura:}
+        \begin{equation*}
+            \frac{2947 + 3826 + 3690 + 4111 + 3750 + 4167 + 3782 + 3820 + 3956}{9} = 3783
+        \end{equation*}
+
+        \textbf{Escritura:}
+        \begin{equation*}
+            \frac{54 + 75 + 80}{3} = 70
+        \end{equation*}
+
+        \vspace{0.5cm}
+        Para Xonotic usamos la media aritmética:
+        \begin{equation*}
+            \frac{168.6185559 + 170.1518409 + 168.8862273}{3} = 169.2188747
+        \end{equation*}
+
+        \vspace{0.5cm}
+        Para Git usamos la media aritmética:
+        \begin{equation*}
+            \frac{128.21 + 126.39 + 125.389}{3} = 126.663
+        \end{equation*}
+
+        \vspace{0.5cm}
+        Para PhpBench usamos la media aritmética:
+         \[
+        \frac{\begin{split}
+            151272 + 160059 + 168379 + 177297 + 169614 \\
+            \, + 145203 + 153161 + 142647 + 152036 + 153266 + 152123 + 154490
+        \end{split}}{12} = 156712
+        \]
+    \end{itemize}
+    
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 1 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+
+    \begin{itemize}
+        \item De las pruebas de rendimiento escojo la de Fhourstones, y de las de tiempo de respuesta escojo la de 7Zip.
+
+        \item Esto es complicado de mejorar con una sola pieza, diría que necesito mejorar al menos dos que serían la placa madre y el procesador. Esta laptop cuenta con el procesador Intel Core i7-740QM lanzada en Q3'10 (trimestre Julio-Septiembre de 2010), pero para mejorar mi procesador también necesito cambiar mi placa madre pues solo es compatible con procesadores de esos años y que ya están enlistados como \textit{Legacy} y descontinuados.
+
+        \item Dado que varios procesadores revisados en Amazon y MercadoLibre rondan entre los \$1800 y los \$4000 MXN siendo más actuales, pero con la mayoría de ellos entre los \$2700 y los \$3500 MXN, diré que la mejora costaría al menos \$3000. Y para la placa madre solo pude encontrarlas en MercadoLibre (Amazon mostraba para PC de escritorio únicamente o tornillos), rondan un precio de \$1100 a \$6000 MXN, así que consideraré al menos \$2000 MXN. En total costaría al menos \$5000 MXN, lo que valdría casi lo mismo si compro una laptop usada con procesador de 2018-2022 que rondan en venta desde \$5800 a \$7000 MXN.
+
+        \item Yendo por la opción de conseguir una laptop usada (pero conservando por el momento las tarjetas RAM actuales), diría que habría una mejora de al menos 120\% comparado con mis resultados actuales gracias a la velocidad del nuevo procesador y de los buses de la tarjeta madre actualizada. Si se considera mejorar la RAM de DD3 a DDR4, entonces habría una mejora del 200\%, puesto que estas tarjetas RAM instaladas también son usadas con un uso de al menos 3 años.\par
+        Todo lo anterior en las mejoras de las pruebas es considerando que no son pruebas de disco, pues están utilizando el poder de procesamiento de la CPU.
+    \end{itemize}
+
 \end{enumerate}
 
-\section{Preguntas}
+\subsection{Integrante 2}
 
-\begin{enumerate}
-\item ¿Cuál computadora tiene el mejor tiempo de ejecución? Comparada con la computadora con la peor medida de tiempo de ejecución, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El tiempo de ejecución de la computadora A es x veces que la computadora B”.
-\item ¿Cuál computadora tiene el mejor rendimiento? Comparada con la computadora con el peor rendimiento, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El rendimiento de la computadora A es x veces que la computadora B”.
-\item Considera todas las computadoras usadas como referencia; Para cada computadora, ¿cuál computadora tiene el mejor desempeño y cuál computadora tiene el peor desempeño?
-\item ¿Qué es el Socket AM4 y AM5? ¿Cuáles son sus diferencias y cuál se usa más hoy en día? ¿Cuáles son los sockets LGA 1200 y LGA 1151? ¿Cuáles son sus diferencias y cuál se usa más hoy en día?
-\item ¿Por qué se considera que la GPU: Nvidia GTX 1080Ti es una de las mejores GPUs de todos los tiempos?
-\item De entre los atributos de cada máquina comparada, ¿cuál máquina tiene el mejor disco duro? ¿Cuál tiene la mejor GPU? ¿Cuál tiene la mejor RAM? ¿Cuáles resultan determinantes en la pérdida o ganancia de desempeño en las pruebas realizadas?
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        T1 & R1 \\
+        \hline
+        T2 & R2 \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \pl{Medida de tiempo de respuesta:}(Indicar cuál medida se escogió y el resultado)\par
+    
+        \pl{Medida de rendimiento:} (Indicar cuál medida se escogió y el resultado)\par
+    \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 2 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+
+\end{enumerate}
+
+\subsection{Integrante 3}
+
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        7Zip Compression y Decompression & Fhourstones \\
+        \hline
+        Unpacking the Linux Kernel & Xonotic \\
+        \hline
+         & Git \\
+        \hline
+        & BlogBench \\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+       \item \textbf{Medida de tiempo de respuesta:} \\
+       Para la prueba 7-Zip Compression usamos la media aritmética:
+       \[
+       \text{Comprensión: } \frac{5360+5368+5240+5350}{4}=5323,\quad
+       \]
+       \[
+       \text{Descompresión: } \frac{5952+5962+5916+5958}{4}=5943.
+       \]
+       Para la prueba Unpacking The Linux Kernel, usamos la media aritmética:
+       \[
+       \frac{
+       	\begin{split}
+       		83.213 + 23.127 + 164.781 + 114.976 + 105.271 + 44.262 \\
+       		+\, 199.853 + 120.652 + 71.761 + 218.521 + 196.464 + 152.41 \\
+       		+\, 128.269 + 114.311 + 124.175 + 196.541
+       	\end{split}
+       }{16} = 128.662.
+       \]
+       
+       \item \textbf{Medida de rendimiento:} \\
+       Para Fhourstones: Usamos la media armónica:
+       \[
+       \frac{3}{\frac{3}{8239.3}} = 8239.3\ \text{Kpos/sec}.
+       \]
+       Para Xonotic: Usamos la media aritmética:
+       \[
+       \frac{133.2123565+134.0232115+133.9485692}{3}=133.7280457\ \text{fps}.
+       \]
+       Para Git: Usamos la media aritmética ponderada y obtenemos:
+       \[
+       120.144\ \text{s}.
+       \]
+       Para Blogbench: Usamos la media aritmética:
+       \[
+       \text{Lectura: } \frac{402312+441013+423612+431612+448250}{5}=429359.8,\quad
+       \]
+       \[
+       \text{Escritura: } \frac{468+468+469}{3}=468.33.
+       \]
+       \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & \\
+        \hline
+        Fhourstones & & & & \\
+        \hline
+        Xonotic (800x600 - Low) & & & &  \\
+        \hline
+        Git & & & &  \\
+        \hline
+        REDIS & & & &  \\
+        \hline
+        BlogBench & & & &  \\
+        \hline
+        Unpacking The Linux Kernel & & & & \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 3 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \begin{itemize}
+    	\item \textbf{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis:} ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da? Para la prueba 7Zip:
+    	
+    	\item \textbf{7Zip:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto de que al realizar el cambio se pueden mejorar los tiempos de arranque hasta en 30 segundos y reducir los tiempos de carga hasta en un 60\%.
+    	
+    	\item \textbf{Fhourstones:} Actualizar el CPU por un AMD Ryzen 5 5600G, con un costo aproximado de \$2,100 MXN, teniendo un impacto en el rendimiento, pues mejora el procesamiento de cálculos intensivos, con una mayor cantidad de núcleos e hilos reduciendo el tiempo de ejecución, mejorando un 40\% en cálculos de búsqueda como algoritmos alfa-beta.
+    	
+    	\item \textbf{Xonotic:} El componente a cambiar en este caso sería el GPU, pues tiene mayor impacto en los frames y benchmarks gráficos, si la cambiamos por una tarjeta gráfica de nivel medio como AMD Radeon RX 6600 con un costo de \$7,000-\$8,000 MXN, el rendimiento podría mejorar desde un 50\% hasta un 100\% de mejora en escenarios de juegos o bien pruebas gráficas.
+    	
+    	\item \textbf{Git:} De igual manera que con el test de 7Zip, lo mejor sería cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto al reducir el tiempo de acceso a archivos y en operaciones de lectura/escritura, así mismo como mejora del rendimiento en tareas de clonación y cambios en repositorios grandes, con una posible mejora del 30-50\% en la velocidad de ejecución.
+    	
+    	\item \textbf{Redis:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD), con el costo aproximado de \$700 MXN, teniendo un impacto en la mejora de los tiempos de acceso a la base de datos y la mejora en la velocidad de ejecución de las operaciones de Redis.
+    	
+    	\item \textbf{Blogbench:} Cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD) es la mejor opción, con el costo aproximado de \$700 MXN, teniendo un impacto en la reducción de tiempos para acceder y mejorar la velocidad de lectura/escritura, mejorando en la lectura en un 50\% y en la escritura en un 80\%-90\%.
+    	
+    	\item \textbf{Unpacking:} Por última vez, cambiar el Disco Duro (HDD) a una unidad de Estado Sólido (SSD) es la mejor opción, con el costo aproximado de \$700 MXN, teniendo un impacto en la reducción de tiempos para la extracción de información, así como lectura y escritura de datos.
+    \end{itemize}
+
+\end{enumerate}
+
+\subsection{Integrante 4}
+
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
+    \pl{Identifica cuáles de las pruebas miden el tiempo de respuesta y cuáles miden el rendimiento.}
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|p{6cm}|p{6cm}|}
+        \hline
+        Pruebas de tiempo de respuesta & Pruebas de rendimiento \\
+        \hline
+        Git & 7-zip compression \\
+        \hline
+        Unpacking the linux kernel & Fhourstones \\
+        \hline
+        & Xonotic (800x600 - Low)\\
+        \hline
+        & Blogbench\\
+        \hline
+        \end{tabular}
+    \end{table}\par
+
+    \pl{Usando la medida de tendencia central adecuada y tu reporte de resultados, calcula:}
+    \begin{itemize}
+        \item \textbf{Medida de tiempo de respuesta:} \\
+       Para la prueba Git: Usamos la media aritmética:
+       \[
+       \text{Git:} = 63.37 \text{s}\quad
+       \]
+       Para la prueba Unpacking The Linux Kernel: Usamos la media aritmética:
+       \[
+       \text{Unpacking:} = 4.637 \text{s}\quad
+       \]
+       \item \textbf{Medida de rendimiento:} \\
+       Para 7-zip compression: Usamos la media aritmetrica:
+       \[
+       \text{Compresion} = 23843\  \text{MIPS}\quad
+       \]
+       \[
+       \text{Decompresión} = 21607\  \text{MIPS}
+       \]
+       Para Fhourstones: Usamos la media aritmétrica ponerada:
+       \[
+       \text{Fhourstones:}= 11722\  \text{Kpos/sec}.
+       \]
+       Para Xonotic: Usamos la media aritmética ponerada:
+       \[
+       \text{Xonotic:}=375.43\ \text{fps}.
+       \]
+       Para Blogbench: Usamos la media aritmétrica:
+       \[
+       \text{Lectura: } =8582\quad
+       \]
+       \[
+       \text{Escritura: } =222
+       \] 
+       Para PHPBench: Usamos la media geométrica:
+       \[
+       \text{PHPBench:} = 413051
+       \]
+    \end{itemize}
+
+    \pl{Una vez que tengas los reportes de tus compañeros, cada alumno fijará su computadora como computadora de referencia, después calcula los tiempos normalizados y obtén la medida de tendencia central adecuada de cada una de las computadoras. Agrega cada tabla obtenida al reporte. Al final, el reporte deberá tener 4 tablas donde se usa cada equipo como computadora de referencia.}
+
+    \begin{table}[htb]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \hline
+        7Zip Compression & & & & 1 \\
+        \hline
+        Fhourstones & & & & 1 \\
+        \hline
+        Xonotic (800x600 - Low) & & & & 1 \\
+        \hline
+        Git & & & & 1 \\
+        \hline
+        REDIS & & & & 1 \\
+        \hline
+        BlogBench & & & & 1 \\
+        \hline
+        Unpacking The Linux Kernel & & & & 1  \\
+        \hline
+        \end{tabular}
+        \caption{Usando la PC 4 como referencia (tiempo normalizado).}
+    \end{table}
+
+    \pl{Dada una prueba de rendimiento y otra de tiempo de respuesta, cada alumno deberá realizar el siguiente análisis: ¿Si pudieras cambiar una pieza de tu computadora para que la prueba se pudiera mejorar, qué cambiarías? ¿Cuánto costaría el cambio? ¿Cuánta sería la mejora que este cambio da?}
+    
+    \begin{itemize}
+        \item \textbf{Prueba de Tiempo de Respuesta:} 
+        Para la prueba de Git, lo que se podria cambiar es aumentar la memoria RAM de 8 GB a 16 GB con otra memoria de 8 GB, con un costo de 661 pesos mexicanos en amazon.  Con esta mejora se espera reducir a la mitad el tiempo promedio de la prueba.
+        \item \textbf{Prueba de Rendimiento:}
+        Para la prueba de 7zip, lo que se podria cambiar es el procesador para aumentar los MIPS y dependiendo del procesador el costo seria de un rango de 5000 - 10000 pesos mexicanos
+    \end{itemize}
+\end{enumerate}
+
+\newpage
+\section{Preguntas}
+\begin{enumerate}[label=(\arabic{section}.\arabic{subsection}.\arabic{enumi})]
+    \item ¿Cuál computadora tiene el mejor tiempo de ejecución? Comparada con la computadora con la peor medida de tiempo de ejecución, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El tiempo de ejecución de la computadora A es x veces que la computadora B”.
+    
+    \item ¿Cuál computadora tiene el mejor rendimiento? Comparada con la computadora con el peor rendimiento, ¿por qué factor es mejor la computadora? Enuncia el resultado de la forma “El rendimiento de la computadora A es x veces que la computadora B”.
+
+    \item Considera todas las computadoras usadas como referencia; Para cada computadora, ¿cuál computadora tiene el mejor desempeño y cuál computadora tiene el peor desempeño?
+
+    \item ¿Qué es el Socket AM4 y AM5? ¿Cuáles son sus diferencias y cuál se usa más hoy en día? ¿Cuáles son los sockets LGA 1200 y LGA 1151? ¿Cuáles son sus diferencias y cuál se usa más hoy en día?
+
+    \item ¿Por qué se considera que la GPU: Nvidia GTX 1080Ti es una de las mejores GPUs de todos los tiempos?
+
+    \item De entre los atributos de cada máquina comparada, ¿cuál máquina tiene el mejor disco duro? ¿Cuál tiene la mejor GPU? ¿Cuál tiene la mejor RAM? ¿Cuáles resultan determinantes en la pérdida o ganancia de desempeño en las pruebas realizadas?
 \end{enumerate}
 
 \end{document}
