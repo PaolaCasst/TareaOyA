@@ -197,7 +197,7 @@
         7Zip Compression & Comprensión promedio de 5323 MIPS, \newline
         con una desviación estándar de 1.35\% \newline
         y una descompresión de 5943 MIPS \newline
-        con una desviación estándar de 0.41\% con una u¿duración de 18 minutos\\
+        con una desviación estándar de 0.41\% con una duración de 18 minutos\\
         \hline
         Fhourstones & Promedio de 8239.3 Kpos/ses, \newline
         con una desviación de 1.92\%, \newline
@@ -461,23 +461,30 @@
 
     \begin{table}[htb]
         \centering
-        \begin{tabular}{|c|c|c|c|c|}
+        \begin{tabular}{|c|c|c|c|}
         \hline
-        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 3} & \textbf{PC 4}\\
+        \textbf{Nombre de la prueba} & \textbf{PC 1} & \textbf{PC 2} & \textbf{PC 4}\\
         \hline
-        7Zip Compression & & & & \\
+        7Zip Compression & $\frac{11541}{5323}=2.1681$ & $\frac{23843}{5323}=4.4792$ & $\frac{10958}{5323}=2.0586$ \\
         \hline
-        Fhourstones & & & & \\
+        7Zip Descompression& $\frac{11227}{5943}=1.8891$ & $\frac{21607}{5943}=3.6357$ & $\frac{8796}{5943}=1.4801$ \\
         \hline
-        Xonotic (800x600 - Low) & & & &  \\
+        Fhourstones & $\frac{7445.0}{8239.3}=0.9036$ & $\frac{11722}{8239.3}=1.4227$ & $\frac{10538.9}{8239.3}=1.2791$ \\
         \hline
-        BlogBench & & & &  \\
+        Xonotic (800x600 - Low) & $\frac{169.2189}{133.728}=1.2654$ & $\frac{375.43}{133.728}=2.8074$ & $\frac{49.32}{133.728}=0.3688$ \\
         \hline
-        Unpacking The Linux Kernel & & & & \\
+        Git & $\frac{126.663}{122.675}=1.0325$ & $\frac{63.37}{122.675}=0.5166$ & $\frac{1461.126}{122.675}=11.9105$ \\
         \hline
-        Vkpeak & & & & \\
+        BlogBench (Lectura) & $\frac{3783}{429359.8}=0.0088$ & $\frac{8582}{429359.8}=0.0200$ & $\frac{159740}{429359.8}=0.3720$ \\
         \hline
-        Phpbrench & & & & \\
+        BlogBench (Escritura) & $\frac{70}{468}=0.1496$ & $\frac{222}{468}=0.4744$ & $\frac{597}{468}=1.2756$ \\
+        \hline
+        Unpacking The Linux Kernel & $\frac{63.977}{128.662}=0.4972$ & $\frac{4.637}{128.662}=0.0360$ & $\frac{71.85}{128.662}=0.5584$ \\
+        \hline
+        Vkpeak & \textit{Sin resultados} & \textit{Sin resultados} & \textit{Sin resultados} \\
+        \hline
+        Phpbrenchv & $\frac{156712}{426932}=0.3671$ & $\frac{413051}{426932}=0.9675$ & $\frac{4357121}{426932}=10.2057$ \\
+        \hline
         \end{tabular}
         \caption{Usando la PC 3 como referencia (tiempo normalizado).}
     \end{table}
